@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="styleslogin.css" />
+</head>
+<body>
+
+  <header>
+  <h2 class="logo">
+    <i class="fa-solid fa-user-group"></i> BuddyAI
+  </h2>
+  
+  <nav class="navigation">
+    <a href="index.html">Home
+    <a href="about.html">About</a>
+    <a href="#">Services</a>
+    <a href="contactus.html">Contact</a>
+  </nav>
+</header>
+
+
+  <div class="wrapper">
+    <!-- Login Form -->
+    <div class="form-box login active">
+      <h2>Login</h2>
+      <form>
+        <div class="input-box">
+  <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+  <input type="email" id="email" placeholder="User-id" required />
+  
+</div>
+<div class="input-box">
+  <span class="icon"><i class="fa-solid fa-lock"></i></span>
+  <input type="password" id="password" placeholder="Password" />
+
+</div>
+
+    
+        <div class="remember-forgot">
+          <label><input type="checkbox" /> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+       <button type="button" class="btn" id="login-btn">Login</button>
+
+        <div class="login-register">
+          <p>Don't have an account? <a href="#" class="register-link">Register here</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Register Form -->
+    <div class="form-box register">
+  <h2>Register</h2>
+  <form>
+    <div class="input-box">
+      <span class="icon"><i class="fa-solid fa-user"></i></span>
+      <input type="text" id="reg-username" required />
+      <label>Username</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+      <input type="email" id="reg-email" placeholder="User-id" />
+      
+    </div>
+    <div class="input-box">
+      <span class="icon"><i class="fa-solid fa-lock"></i></span>
+      <input type="password" id="reg-password" placeholder="Password" />
+     
+    </div>
+    <div class="remember-forgot">
+      <label><input type="checkbox" id="reg-terms" /> I agree to terms</label>
+    </div>
+    <button type="button" class="btn" id="register-btn">Register</button>
+
+    <div class="login-register">
+      <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+    </div>
+  </form>
+</div>
+
+    </div>
+  </div>
+
+  <script src="scriptlogin.js"></script>
+</body>
+</html>

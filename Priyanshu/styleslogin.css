@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('background.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+ background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(139, 92, 246, 0.9));
+
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2rem;
+ background: linear-gradient(135deg, #00c6ff, #0072ff);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  font: left;
+}
+.logo:hover {
+  transform: scale(1.05);
+  color: #ff007f; 
+}
+
+
+.navigation a,
+.navigation .btn {
+  font-size: 1em;
+  color: #fff;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navigation a:hover {
+  /* background-color: #00c6ff; or any highlight color */
+  color: #fff;
+  text-decoration: underline;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  margin-top: 120px;
+  background: rgba(255,255,255,0.1);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.form-box {
+  display: none;
+}
+
+.form-box.active {
+  display: block;
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #162938;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin: 20px 0;
+  border-bottom: 2px solid #162938;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #162938;
+  transition: 0.3s;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+  font-size: 0.8em;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #162938;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #162938;
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  color: #162938;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-register {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.login-register a {
+  color: #162938;
+  text-decoration: none;
+  font-weight: 600;
+}
+.toggle-password {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #162938;
+  font-size: 1.2em;
+}
+
+/* .logo {
+  position: relative;
+  animation-name: moveAndColor;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveAndColor {
+  0%   { background-color: red;   left: 0px;   top: 0px; }
+  25%  { background-color: yellow; left: 200px; top: 0px; }
+  50%  { background-color: blue;   left: 200px; top: 200px; }
+  75%  { background-color: green;  left: 0px;   top: 200px; }
+  100% { background-color: red;    left: 0px;   top: 0px; }
+} */
+
+
+
